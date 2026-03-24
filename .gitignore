@@ -9,3 +9,6 @@
 # IDEs
 .vscode/
 .idea/
+
+# Executável do projeto
+Cartas
