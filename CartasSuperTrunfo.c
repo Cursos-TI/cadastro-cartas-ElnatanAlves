@@ -67,7 +67,7 @@ printf("População: %d\n", quantidadePopulacao);
 printf("Área: %.2f Km² \n", areaEmKm);
 printf("PIB: %.2f bilhões de reais \n", PIB);
 printf("Número de Pontos Turisticos: %d\n", qtdPontosTuristicos);
-printf("\n=== %s Aguarde o outro jogador lançar a carte dele ===\n", nomeDoJogador);
+printf("=== %s Aguarde o outro jogador lançar a carte dele ===\n", nomeDoJogador);
 
 
 }
