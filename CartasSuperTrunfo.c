@@ -3,7 +3,7 @@
 
 
 // Variavel Global nome do Jogador
-char nomeDoJogador [50];
+char nomeDoJogador, nomeDoJogador2 [50];
 
 int main (){
 
@@ -69,5 +69,50 @@ printf("PIB: %.2f bilhões de reais \n", PIB);
 printf("Número de Pontos Turisticos: %d\n", qtdPontosTuristicos);
 printf("=== %s Aguarde o outro jogador lançar a carte dele ===\n", nomeDoJogador);
 
+printf("\n === Bem vindos ao Super Trunfo de Cartas ===\n");
+
+printf("Para iniciar o jogo vamos precisar que você envie "
+       "algumas informações, preencha os campos "
+       "abaixo com atenção.\n");
+
+printf("\nInicialmente preciso que você se identifique: ");
+scanf("%s", nomeDoJogador2);
+
+printf("\nPerfeito, %s agora digite apenas a inicial do estado (1 letra):", nomeDoJogador);
+scanf(" %c", &incialDoEstado2);
+
+printf("\nAgora, digite o código da carta que você irá lançar. Ex. A01, A02...: ");
+scanf("%s", codigoCarta2);
+getchar();
+
+printf("\nE qual o nome da cidade dentro do estado que você quer jogar? ");
+fgets(nomeDaCidade2, 50, stdin);
+nomeDaCidade2[strcspn(nomeDaCidade2, "\n")] = '\0';
+
+printf("\n%s, você sabe o numero aproximado da população da sua cidade? ", nomeDoJogador);
+scanf("%d", &quantidadePopulacao2);
+
+printf("\nEntendido, existe aproximadamente, %d isto é ótimo, agora me fala a área em Km² "
+"precisa só digitar o numero: ");
+scanf("%f", &areaEmKm2);
+
+printf("\nEstamos indo bem, agora me informa o PIB aproximado da sua cidade: ");
+scanf("%f", &PIB2);
+
+printf("\nUau, fiquei com surpreso com a ultima informação, provavelmente a cidade deve ter "
+"òtimos pontos turisticos, sabe me informar quantos? ");
+scanf("%d", &qtdPontosTuristicos2);
+
+printf("\n=== Resumo da Carta 1 Lançada por %s ===\n", nomeDoJogador);
+printf("Estado: %c\n", incialDoEstado2);
+printf("Código da Carta: %s\n", codigoCarta2);
+printf("Nome da Cidade: %s\n", nomeDaCidade2);
+printf("População: %d\n", quantidadePopulacao2);
+printf("Área: %.2f Km² \n", areaEmKm2);
+printf("PIB: %.2f bilhões de reais \n", PIB2);
+printf("Número de Pontos Turisticos: %d\n", qtdPontosTuristicos2);
+printf("=== %s Aguarde o outro jogador lançar a carte dele ===\n", nomeDoJogador2);
+
+return 0;
 
 }
