@@ -3,7 +3,8 @@
 
 
 // Variavel Global nome do Jogador
-char nomeDoJogador, nomeDoJogador2 [50];
+char nomeDoJogador [50];
+char nomeDoJogador2 [50];
 
 int main (){
 
@@ -103,7 +104,7 @@ printf("\nUau, fiquei com surpreso com a ultima informação, provavelmente a ci
 "òtimos pontos turisticos, sabe me informar quantos? ");
 scanf("%d", &qtdPontosTuristicos2);
 
-printf("\n=== Resumo da Carta 1 Lançada por %s ===\n", nomeDoJogador);
+printf("\n=== Resumo da Carta 1 Lançada por %s ===\n", nomeDoJogador2);
 printf("Estado: %c\n", incialDoEstado2);
 printf("Código da Carta: %s\n", codigoCarta2);
 printf("Nome da Cidade: %s\n", nomeDaCidade2);
